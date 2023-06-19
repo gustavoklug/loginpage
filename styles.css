@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url("imgs/lake.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    margin-top: 80px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    padding: 75px;
+    background-color: #ffffff80;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000070;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #240c2f;
+}
+
+.floatlabels {
+    position: relative;
+    margin-top: 5%;
+    padding-top: 15px;
+    margin-bottom: 5%;
+}
+
+.floatlabels input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    min-width: 180px;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 2px solid #240c2f;
+    background-color: transparent;
+    outline: none;
+    transition: all .3s ease-in-out;
+    border-radius: 0;
+}
+
+.floatlabels label {
+    color: #240c2f;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-in-out;
+}
+
+.floatlabels input:focus {
+    border-bottom: 2px solid #240c2f;
+}
+
+.floatlabels input:focus + label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #240c2f;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #240c2f;
+    font-size: 11px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #5d4469;
+    
+}
+
+button {
+    background-color: transparent;
+    border-color: #000000;
+    color: #240c2f;
+    padding: 7px;
+    width: 180px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease-in-out;
+    position: relative;
+    top: -65px;
+}
+
+button:hover {
+    background-color: #240c2f;
+    color: #fff;
+}
+
+.justify-center {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.or-line {
+    position: relative;
+    top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000000;
+}
+
+.or {
+    margin: 0 10px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.content {
+    position: relative;
+    top: 60px;
+}
+
+
+p {
+    text-align: center;
+    color: #240c2f;
+    font-size: 14pt;
+}
+
+.social-media {
+    position: relative;
+    top: -15px;
+}
+
+.social-icons {
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    padding: 0 20px;
+    margin-left: -13px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 768px) {
+    
+.card {
+    padding: 20px;
+}
+    
+.floatlabels input,
+.remember-label,
+.forgot-password,
+button {
+      width: 100%;
+}
+    
+.remember-forgot {
+    flex-direction: column;
+    align-items: flex-start;
+}
+    
+.remember-label {
+    margin-top: 10px;
+}
+    
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+}
+
+}
